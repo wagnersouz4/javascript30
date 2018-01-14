@@ -1,2 +1,2 @@
 # javascript30
-30 Days of Javascript challenges
+30 Days of javascript
