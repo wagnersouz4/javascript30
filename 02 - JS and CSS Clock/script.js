@@ -17,7 +17,6 @@ const updateMinute = (minuteElement) => {
   const minutes = now.getMinutes();
   const degrees = ((minutes / 60) * 360) + 90;
   minuteElement.style.transform = `rotate(${degrees}deg)`;
-
 };
 
 // Updating hour
@@ -35,5 +34,5 @@ const updateClock = () => {
   updateHour(hourHand);
 };
 
-// Updating clock every second
+// Updating the clock every second
 setInterval(updateClock, 1000);
