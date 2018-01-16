@@ -20,7 +20,7 @@ const updateMinute = (minuteElement) => {
 
 };
 
-// Updating second
+// Updating hour
 const updateHour = (hourElement) => {
   const now = new Date();
   const hours = now.getHours();
@@ -28,11 +28,12 @@ const updateHour = (hourElement) => {
   hourElement.style.transform = `rotate(${degrees}deg)`;
 };
 
-const setTime = () => {
+// Update clock's all pointers
+const updateClock = () => {
   updateSecond(secondHand);
   updateMinute(minuteHand);
   updateHour(hourHand);
 };
 
-// Calling the function each second
-setInterval(setTime, 1000);
+// Updating clock every second
+setInterval(updateClock, 1000);
