@@ -27,7 +27,6 @@ const updateHour = (hourElement) => {
   hourElement.style.transform = `rotate(${degrees}deg)`;
 };
 
-// Update clock's all pointers
 const updateClock = () => {
   updateSecond(secondHand);
   updateMinute(minuteHand);
