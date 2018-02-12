@@ -3,7 +3,7 @@ const cities = [];
 
 fetch(endpoint)
   .then(blob => blob.json())
-  .then(data => cities.push(...data).sort());
+  .then(data => cities.push(...data));
 
 const isMatching = (city, regex) => 
   city.city.match(regex) || city.state.match(regex);
