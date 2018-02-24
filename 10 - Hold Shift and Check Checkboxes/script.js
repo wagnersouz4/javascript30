@@ -8,7 +8,7 @@ function handleClick(e) {
   
   if (e.shiftKey && this.checked) { 
     checkboxes.forEach(checkBox => {
-      if (checkBox === this || checkBox === lastChecked) { console.log('starting');  isInBetween = !isInBetween; }
+      if (checkBox === this || checkBox === lastChecked) { isInBetween = !isInBetween; }
       if (isInBetween) { checkBox.checked = true; }
     }); 
   }
